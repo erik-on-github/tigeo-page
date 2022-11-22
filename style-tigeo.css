@@ -152,14 +152,23 @@ nav {
 #main {
 	display: flex;
 }
+.main-photo {
+	border-radius: 4px;
+}
 #all-the-contant {
 	display: flex;
 	justify-content: space-between;
 }
 #request {
+	display: flex;
+	margin-left: 70px;
+}
+#request-3 {
+	display: none;
+}
+#request, #request-3 {
 	margin-bottom: 15px;
 	top: 0;
-	display: flex;
 	flex-wrap: wrap;
 	position: sticky;
 	justify-content: center;
@@ -167,14 +176,20 @@ nav {
 	font-size: 16px;
 	height: 486px;
 	color: #FFFFFF;
-	margin-left: 70px;
 	margin-top: 50px;
 	width: 310px;
 	background: linear-gradient(100.12deg, #BCA59F 0.79%, #CFBEBA 99.2%);
 	border-radius: 4px;
 }
-#request form {
+#request form, #request-3 form {
 	width: 250px;
+}
+#request-3 input:not(#send-request) {
+	border: none;
+	width: 210px;
+	padding: 20px;
+	border-radius: 4px;
+	margin-bottom: 10px;
 }
 #request input:not(#send-request) {
 	border: none;
@@ -183,7 +198,7 @@ nav {
 	border-radius: 4px;
 	margin-bottom: 10px;
 }
-#request-text {
+#request-text, #request-text-3 {
 	width: 250px;
 	margin-top: 30px;
 	margin-bottom: 20px;
@@ -198,7 +213,7 @@ nav {
 	color: #FFFFFF;
 	font-weight: 500;
 }
-#agreement-request {
+#agreement-request, #agreement-request-3 {
 	font-size: 12px;
 	font-weight: 500;
 	background-image: url(img/point.png);
@@ -207,7 +222,7 @@ nav {
 	background-position-y: 50%;
 	padding-left: 30px;
 	margin-top: 15px;
-	margin-bottom: 30px;
+	margin-bottom: 50px;
 	margin-left: 10px;
 }
 input[type="number"]::-webkit-outer-spin-button,
@@ -222,6 +237,7 @@ input[type="number"]:focus {
 }
 #main {
 	margin-left: 20px;
+	margin-right: 20px;
 	margin-top: 50px;
 }
 #main-product {
@@ -343,6 +359,10 @@ input[type="number"]:focus {
 #galary_characteristic {
 	display: flex;
 	margin-top: 40px;
+}
+.buy-second-floor {
+	display: flex;
+
 }
 /*#swipe-1 {
 	float: left;
@@ -679,21 +699,21 @@ input[type="number"]:focus {
 #img-main-1 {
 	background-image: url(img/sp-1.png);
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: contain;
 	width: 270px;
 	height: 220px;
 }
 #img-main-2 {
 	background-image: url(img/sp-2.png);
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: contain;
 	width: 270px;
 	height: 220px;
 }
 #img-main-3 {
 	background-image: url(img/sp-1.png);
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: contain;
 	width: 270px;
 	height: 220px;
 }
@@ -740,6 +760,10 @@ input[type="number"]:focus {
 	line-height: 130%;
 	color: #18C529;
 	padding-left: 6px;
+}
+#status-mobile-1, #status-mobile-3 {
+	display: none;
+	margin-top: 10px;
 }
 .buy-this-sp {
 	border: none;
@@ -830,7 +854,7 @@ font-size: 16px;
 	width: 100%;
 	height: 50px;
 }
-#similar-products input {
+#similar-products-themself input {
 	text-align: center;
 	font-weight: 400;
 	font-size: 16px;
@@ -1125,7 +1149,7 @@ font-size: 16px;
 	}
 }
 @media screen and (max-width: 1040px) {
-	#III_produt-similar {
+	#II_produt-similar {
 		display: none;
 	}
 	#basic-characteristics {
@@ -1282,20 +1306,18 @@ font-size: 16px;
 	}
 }
 @media screen and (max-width: 768px) {
-	#request-text-2 {
-		width: 310px;
-	}
-	#request-2 input {
-		width: 310px;
-		margin-bottom: 10px;
-	}
-	#request-2 form {
-		margin-right: 20px;
-		display: flex;
-		flex-direction: column;
-	}
 	#request-2 {
-		flex-direction: column;
+		display: none;
+	}
+	#request-3 {
+		padding: 0 40px;
+		padding-bottom: 30px;
+		display: flex;
+		margin-top: 0;
+		margin-bottom: 65px;
+	}
+	#this-type-description-2 {
+		margin-bottom: 55px;
 	}
 	#discription, #this-type-description-1, #this-type-description-2 {
 		width: 600px;
@@ -1321,12 +1343,88 @@ font-size: 16px;
 		font-size: 35px;
 	}
 }
+@media screen and (max-width: 705px) {
+	.compare-button, .button-basket {
+		width: 100%;
+		margin-top: 10px;
+	}
+	.compare-button {
+		margin-left: 10px;
+	}
+	#img-main-1, #img-main-3 {
+		width: auto;
+	}
+	.buttons-buy {
+		flex-direction: column;
+	}
+	.name-sp {
+		margin-top: 5px;
+	}
+	#status-1, #status-3 {
+		display: none;
+	}
+	#status-mobile-1, #status-mobile-3 {
+		display: block;
+	}
+}
 @media screen and (max-width: 680px) {
 	#name {
 		font-size: 32px;
 	}
 	#phone-number, #work-time {
 		display: none;
+	}
+	#discription, #this-type-description-1, #this-type-description-2 {
+		width: auto;
+	}
+}
+@media screen and (max-width: 645px) {
+	.img-tag {
+		right: 10px;
+	}
+	#navigation-way {
+		font-size: 14px;
+		width: auto;
+		right: 190px;
+	}
+	#characteristic {
+		width: 450px;
+	}
+	#basic-characteristics {
+		width: 450px;
+	}
+	.product-sim {
+		padding: 10px;
+	}
+	#button-new-model {
+		width: 450px;
+	}
+	.product-sim {
+		width: 200px;
+	}
+	.mini-discr, .name-sp {
+		width: 150px;
+	}
+	.name-sp {
+		font-size: 14px;
+	}
+	.mini-discr {
+		font-size: 12px;
+	}
+	.big-price {
+		font-size: 18px;
+	}
+	.small-price {
+		font-size: 10px;
+	}
+	#price--1 {
+		font-size: 18px;
+	}
+	.button-basket, .compare-button {
+		height: 30px;
+	}
+	#img-main-1, #img-main-3 {
+		height: 165px;
 	}
 }
 @media screen and (max-width: 630px) {
@@ -1350,7 +1448,38 @@ font-size: 16px;
 		margin-top: 20px;
 	}
 }
+@media screen and (max-width: 530px) {
+	#button-new-model, #basic-characteristics, #equipment {
+		width: 400px;
+	}
+	.product-sim {
+		width: 170px;
+	}
+	#discription-main-dm {
+		width: 240px;
+		background-position-x: 85%;
+	}
+	#img-main-1, #img-main-3 {
+		height: 140px;
+	}
+}
 @media screen and (max-width: 500px) {
+	#button-new-model, #basic-characteristics, #equipment {
+		width: 360px;
+	}
+	#galary {
+		width: 400px;
+	}
+	.main-photo {
+		width: 400px;
+	}
+	.other-photo {
+		width: 83px;
+	}
+	#discription-main-dm {
+		width: 200px;
+		background-position-x: 95%;
+	}
 	#footer-down {
 		justify-content: flex-start;
 	}
@@ -1368,6 +1497,19 @@ font-size: 16px;
 		padding-right: 40px;
 		padding-left: 10px;
 		background-position: bottom;
+	}
+	#bonuses {
+		flex-direction: column;
+	}
+	.bonuses {
+		width: auto;
+	}
+	#I_bonus {
+		padding-top: 10px;
+	}
+	#III_bonus, #II_bonus {
+		align-self: auto;
+		margin-top: 25px;
 	}
 }
 @media screen and (max-width: 480px) {

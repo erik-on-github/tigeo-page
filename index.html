@@ -82,11 +82,11 @@
     			<div id="galary_characteristic">
     				<div id="galary">
     					<div id="main-photo">
-    						<div id="main-photo-1"></div>
-    						<div id="main-photo-2"></div>
-    						<div id="main-photo-3"></div>
-    						<div id="main-photo-4"></div>
-    						<div id="main-photo-5"></div>
+    						<div class="main-photo" id="main-photo-1"></div>
+    						<div class="main-photo" id="main-photo-2"></div>
+    						<div class="main-photo" id="main-photo-3"></div>
+    						<div class="main-photo" id="main-photo-4"></div>
+    						<div class="main-photo" id="main-photo-5"></div>
     					</div>
     					<div id="other-photo">
     						<div class="other-photo" id="op-1"></div>
@@ -100,7 +100,7 @@
     				</div>
     				<div id="characteristic">
     					<div id="bonuses">
-    						<div class="bonuses" id="I_bonus">Удаленная <p>тех.поддержка</p> <p>через интернет</p></div>
+    						<div class="bonuses" id="I_bonus">Удаленная тех.поддержка <p>через интернет</p></div>
     						<div class="bonuses" id="II_bonus">Гарантийное <p>и пост. гарантийное</p><p>обслуживание</p></div>
     						<div class="bonuses" id="III_bonus">Бесплатная<p>доставка</p></div>
     					</div>
@@ -181,6 +181,7 @@
     					<div id="I_produt-similar" class="product-sim">
     						<div id="img-tag-1" class="img-tag"></div>
     						<div id="img-main-1" class="img-main"></div>
+                            <div id="status-mobile-1" class="status">В наличии</div>
     						<div class="name-sp">Тахеометр Trimble S5 5″ <p>Robotic, DR Plus</p></div>
     						<div class="mini-discr">Точность угловых измерений: 2" <p>Дальность без отражателя: 1000 м</p></div>
     						<div class="price_status">
@@ -190,8 +191,10 @@
     						</div>
     						<div class="buttons-buy">
     							<button class="buy-this-sp">Купить в 1 клик</button>
-    							<button id="bb-1" class="button-basket"></button>
-    							<button class="compare-button"></button>
+                                <div class="buy-second-floor">
+                                    <button id="bb-1" class="button-basket"></button>
+                                    <button class="compare-button"></button>
+                                </div>
     						</div>
     					</div>
     					<div id="II_produt-similar" class="product-sim">
@@ -217,6 +220,7 @@
     					<div id="III_produt-similar" class="product-sim">
     						<div id="img-tag-3" class="img-tag"></div>
     						<div id="img-main-3" class="img-main"></div>
+                            <div id="status-mobile-3" class="status">В наличии</div>
     						<div class="name-sp">Тахеометр Trimble S5 5″ <p>Robotic, DR Plus</p></div>
     						<div class="mini-discr">Точность угловых измерений: 2"<p>Дальность без отражателя: 1000 м</p></div>
     						<div class="price_status">
@@ -225,8 +229,10 @@
     						</div>
     						<div class="buttons-buy">
     							<button class="buy-this-sp">Купить в 1 клик</button>
-    							<button id="bb-2" class="button-basket"></button>
-    							<button class="compare-button"></button>
+                                <div class="buy-second-floor">
+                                    <button id="bb-2" class="button-basket"></button>
+                                    <button class="compare-button"></button>
+                                </div>
     						</div>
     					</div>
     				</div>
@@ -248,6 +254,18 @@
                         </form>
                         <div id="agreement-request">Оставляя заявку вы соглашаетесь<p>с обработкой персональных данных</p></div>
                     </div>
+                    <div id="request-3">
+                <div id="request-text-3">
+                    Оставьте заявку, <p>мы детально изучим особенности Вашего проекта и подберем оптимальное решение исходя из задач и бюджета</p>
+                </div>
+                <form>
+                    <input required type="text" placeholder="Имя*" id="name-request" name="name-request">
+                    <input required type="number" placeholder="Номер*" id="phone-number-request" name="phone-number-request">
+                    <input type="text" placeholder="Комметарий" id="comment-request" name="comment-request">
+                    <input type="submit" id="send-request" value="Отправить заявку" name="send">
+                </form>
+                <div id="agreement-request-3">Оставляя заявку вы соглашаетесь<p>с обработкой персональных данных</p></div>
+            </div>
     			</div>
     		</article>
     	</div>
