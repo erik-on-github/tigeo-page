@@ -268,8 +268,7 @@ input[type="number"]:focus {
 	margin-bottom: 15px;
 	position: sticky;
 	top: 0;
-	right: 0;
-	display: block;
+	display: inline-block;
 	align-items: center;
 	margin-top: 50px;
 	display: flex;
@@ -887,9 +886,6 @@ font-size: 16px;
 	padding-left: 70px;
 	padding-right: 15px;
 }
-/*.footer-columns {
-	margin-left: 45px;
-}*/
 #three-dots-1, #three-dots-2 {
 	display: none;
 }
@@ -1037,7 +1033,23 @@ font-size: 16px;
 }
 
 
-@media	screen and (max-width: 1535px) {
+@media	screen and (max-width: 2000px) and (min-width: 1530px) {
+	#discription, this-type-description-1, #this-type-description-2 {
+		width: 95%;
+	}
+	#all-the-contant {
+		justify-content: flex-start;
+		width: 87%;
+	}
+	#main {
+		width: 80%;
+		margin-right: 0;
+	}
+	.other-photo {
+		width: 96px;
+	}
+}
+@media	screen and (max-width: 1530px) {
 	#contacts-aside {
 		display: none;
 	}
@@ -1061,7 +1073,7 @@ font-size: 16px;
 		width: 200px;
 	}
 }
-@media screen and (max-width: 1415px) {
+@media screen and (max-width: 1450px) {
 	#discription, #this-type-description-1, #this-type-description-2 {
 		width: 1000px;
 	}
